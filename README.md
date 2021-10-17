@@ -1,1 +1,1 @@
-# casino-monkey
+# monkey-casino

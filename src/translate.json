@@ -1,0 +1,103 @@
+{
+    "en": {
+        "translation": {
+            "labels": {
+                "fname": "First name",
+                "lname": "Last name",
+                "address": "Address",
+                "username": "Username",
+                "email": "E-mail",
+                "password": "Password",
+                "password_confirm": "Password Confirmation"
+            },
+            "errors": {
+                "fname": {
+                    "required": "First name is required",
+                    "letters_only": "Must contain only letters",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "lname":{"required": "Last name is required",
+                    "letters_only": "Must contain only letters",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "address": {"required": "Adress is required",
+                    "letters_only": "Must contain only letters",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "username": {"required": "Username is required",
+                    "letters_only": "Must contain only letters",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },                       
+                "email": {"required": "E-mail is required",
+                    "email":"Invalid e-mail()"
+                },                       
+                "password":{"required": "Password is required",
+                    "passwordStrength":"Password strength is weak",
+                    "passwordMatch":"Passwords must match",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },                       
+                "password_confirm":{"required": "Please confirm your password",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                }
+            },
+            "buttons": {
+                "englishButton":"ENGLISH",
+                "croatianButton":"CROATIAN",
+                "forwardButton": "Forward",
+                "backButton": "Back",
+                "submitButton": "Register"
+            },
+            "terms": {"text":"By checking this you agree to these ","link":"terms and conditions"} 
+        }
+    },
+    "hr": {
+        "translation": {
+            "labels": {
+                "fname": "Ime",
+                "lname": "Prezime",
+                "address": "Adresa",
+                "username": "Korisničko ime",
+                "email": "E-mail",
+                "password": "Lozinka",
+                "password_confirm": "Potvrdi Lozinku"
+            },
+            "errors": {
+                
+                "fname": {
+                    "required": "Ime je obvezno polje",
+                    "letters_only": "Molimo koristite samo slova",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "lname":{"required": "Prezime je obvezno polje",
+                    "letters_only": "Molimo koristite samo slova",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "address": {"required": "Adresa je obvezno polje",
+                    "letters_only": "Molimo koristite samo slova",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },
+                "username": {"required": "Korisničko ime je obvezno polje",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },                       
+                "email": {"required": "E-mail je obvezno polje",
+                    "email":"Nevaljana e-mail adresa"
+                },                       
+                "password":{"required": "Lozinka je obvezno polje",
+                    "passwordStrength":"Lozinka nije dovoljno snažna",
+                    "passwordMatch":"Lozinke se ne podudaraju",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                },                       
+                "password_confirm":{"required": "Molimo potvrdite lozinku",
+                    "minLength": "Must contain at least ${validator.params.minLength} "
+                }},
+            "buttons": {
+                "englishButton":"ENGLESKI",
+                "croatianButton":"HRVATSKI",
+                "forwardButton": "Nastavi",
+                "backButton": "Natrag",
+                "submitButton": "Registracija"
+            },
+            "terms": {"text":"Označavanjem ovog polja potvrđujete da ste pročitali ","link":"uvjete korištenja"}
+        }
+    }
+}

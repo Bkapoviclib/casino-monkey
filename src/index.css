@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app-container {
+  background-color: rgb(34, 142, 161);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  margin: 10px;
+  border-radius: 10px;
+  height: auto;
+  font-size: larger;
+  min-width: 30%;
+  padding: 10px;
+}
+#language-buttons {
+  margin: 20px;
+  width: auto;
+  padding: 20px;
+  margin-left: auto;
+}
+#sidebar-container {
+  min-width: 0;
+  background-image: url("./jungleBackgroundFilter.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 55);
+  flex: 1;
+  border: 1px solid;
+  border-radius: 0px 15px 15px 0px;
+}
+#step-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+}
+body {
+  height: 100vh;
+}
+
+form {
+  min-width: 0;
+  background-color: rgb(117, 25, 117);
+  display: flex;
+  flex: 1.5;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#input-div {
+  margin: 10px;
+  width: 40%;
+  height: 100%;
+}
+
+input {
+  min-width: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #1890ff;
+  padding: 5px 10px;
+  outline: none;
+  margin: 5px;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 60%;
+  height: 50%;
+  flex-direction: row;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgb(7, 27, 7);
+}
+
+#terms {
+  border: 1px solid;
+  margin: 3px;
+  padding: 5px;
+}
+
+#title {
+  position: absolute;
+}
+
+.monkey-img {
+  z-index: 10;
+  position: absolute;
+  left: -12.18%;
+  width: 18%;
+}
+
+label {
+  margin: 10px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+}
+
+span {
+  margin: 10px;
+  padding: 2px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 133, 40);
+  border-radius: 3px;
+}
+
+header {
+  height: 10%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(117, 25, 117);
+  align-items: center;
+  justify-content: center;
+}
