@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#success-div{
+font-size: large;
+color: white;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background:rgb(151, 41, 33);
+border-radius:15px;
+border:1px black solid;
+height: 30vh;
+width:50vh;
+}
+#side-text{
+  color:black;
+  background:brown;
+  border-radius: 15px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+}
+#app-container {
+  background-image: url(./images/bananabackground.png);
+  background-color: rgb(34, 142, 161);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  margin: 10px;
+  border-radius: 10px;
+  height: auto;
+  font-size: larger;
+  min-width: 30%;
+  padding: 10px;
+}
+#language-buttons {
+  margin: 20px;
+  width: auto;
+  padding: 20px;
+  margin-left: auto;
+  
+  }
+#sidebar-container {
+  color:black;
+  min-width: 0;
+  background-image: url("./images/jungleBackgroundFilter.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 55);
+  flex: 1;
+  border: 2px dotted rgb(251, 255, 24);
+  border-left:none;
+  border-radius: 0px 15px 15px 0px;
+  height:100%;
+}
+#step-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+  margin-top:150px;
+ 
+}
+body {
+  height: 100vh;
+}
+
+form {
+  min-width: 0;
+  background-color: #a13725;
+  display: flex;
+  flex: 1.5;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dotted rgb(251, 255, 24);
+  border-right:none;
+  border-radius: 15px 0px 0px 15px;
+  
+}
+
+#input-div {
+ display:flex;
+ flex-direction: row;
+  margin:10px 10px 10px 30px;
+  
+  height: auto;
+}
+
+input {
+  flex:1;
+  border-radius: 15px;
+  min-width: 0;
+  width: 100%;
+  min-height:30px;
+  border:2px dotted rgb(251, 255, 24);
+  background:black;
+  color:white;
+  padding: 5px 10px;
+  outline: none;
+  margin: 5px;
+  max-height:35px;
+}
+
+.form-wrapper {
+  animation: bounce-in-right 3s ease 1;
+  display: flex;
+  width: 60%;
+  height: 50%;
+  flex-direction: row;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 13px 15px rgb(7, 27, 7);
+}
+
+#terms {
+  background:white;
+  border: 1px solid;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#title {
+  position: absolute;
+  
+}
+
+.monkey-img {
+  z-index: 10;
+  position: absolute;
+  left: -12.18%;
+  width: 18%;
+}
+.title-img {
+  z-index: 10;
+  position: absolute;
+  top:-10%;
+  min-width: 30%;
+  max-width:35%;
+  animation: bounce-in 2s ease 1;
+}
+
+label {
+  flex:0.1;
+  margin: 10px;
+  font-size: larger;
+  color: black;
+}
+
+span {
+  flex:1;
+  margin: 10px;
+  padding: 6px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgb(255, 138, 138);
+}
+
+header {
+  height: 5%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #A13522;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:40px;
+}
+
+.loader{
+  font-size: 3rem;
+  color: yellow;
+  min-width: 0;
+  background-color: #a13725;
+  display: flex;
+  flex: 1.5;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dotted rgb(251, 255, 24);
+  border-right:none;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#next-button{
+  margin: 10px 50% 50% 50%;
+}
+
+@media only screen and (max-width: 838px) {
+   
+  .loader{
+    border: 2px dotted rgb(251, 255, 24);
+      border-bottom:none;
+      border-radius: 15px 15px 0px 0px;
+      font-size: 2rem;
+  }
+  span{font-size: small;}
+  input{
+    width:auto;
+    min-height:15px;
+  }
+  label{
+    display:none
+  }
+    .form-wrapper {
+      display: flex;
+      width: 60%;
+      height: 50%;
+      flex-direction: column;
+      position: absolute;
+      border-radius: 15px;
+      box-shadow: 65px rgb(7, 27, 7);
+      border-bottom:none;
+    }
+    #sidebar-container {
+      color:rgb(0, 0, 0);
+      min-width: 0;
+      background-image: url("./images/jungleBackgroundFilter.png");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(233, 233, 55);
+      flex: 1;
+      border: 2px dotted rgb(251, 255, 24);
+      border-top:none;
+      border-radius: 0px 0px 15px 15px;
+      height:100%;
+      box-shadow: 13px 15px;
+    }
+    #step-container{
+      margin-bottom:50%;
+      margin-top:150px;
+    }
+    form {
+      min-width: 0;
+      background-color: #a13725;
+      display: flex;
+      flex: 1.5;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 2px dotted rgb(251, 255, 24);
+      border-bottom:none;
+      border-radius: 15px 15px 0px 0px;
+    }
+    #input-div {
+      flex:1;
+      display:flex;
+      flex-direction: column;
+       margin:10px 10px 10px 10px;
+      width:fit-content;
+       height: 15%;
+     }
+     #language-buttons {
+      margin: 20px;
+      width: auto;
+      padding: 20px;
+      margin-left: auto;
+      display:none;
+    
+    }
+}
+
+@keyframes slidein {
+  from {
+    margin-right:100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes titlenterance {
+  from {
+   width:0%;
+   height:0%;
+  }
+
+  to {
+    width:100%;
+    height:100%;
+  }
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  80% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
