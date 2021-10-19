@@ -68,7 +68,7 @@ return res;
     let result = {
       [Object.keys(
         element
-      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).matches(validator.passwordStrength,"At least 8 characters, one uppercase, one lowercase, one special(#,$,% etc)").oneOf([Yup.ref("password"),null],"PASSWORD MUST MATCH")
+      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).matches(validator.passwordStrength,i18next.t(`errors.password.passwordStrength`)).oneOf([Yup.ref("password"),null],i18next.t(`errors.password.passwordMatch`))
     };
     console.log(result);
     return result;
@@ -81,7 +81,7 @@ return res;
     let result = {
       [Object.keys(
         element
-      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).matches(validator.email,i18next.t("errors.fname.letters_only"))
+      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).matches(validator.email,i18next.t("errors.email.email"))
     };
     console.log(result);
     return result;
@@ -98,7 +98,7 @@ return res;
     let result = {
       [Object.keys(
         element
-      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).min(`${validator.min}`).max(`${validator.max}`).matches(validator.lettersOnly,i18next.t("errors.fname.letters_only"))
+      )[0]]: Yup.string().required(i18next.t(`errors.${name}.required`)).min(`${validator.min}`,i18next.t(`errors.${name}.minLength`)).max(`${validator.max}`, i18next.t(`errors.${name}.maxLength`)).matches(validator.lettersOnly,i18next.t("errors.fname.letters_only"))
     };
     console.log(result);
     return result;

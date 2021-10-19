@@ -47,8 +47,9 @@ function StepTwo({
   const {
     register,
     handleSubmit,
+    onBlur,
     formState: { errors },
-  } = useForm({ resolver: yupResolver(formSchema) });
+  } = useForm({ resolver: yupResolver(formSchema),shouldFocusError:true,mode:"onBlur", reValidateMode:"onSubmit" });
   //grab names and default values from json data
   let initialValues = [];
   jsonData.map((element) =>
