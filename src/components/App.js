@@ -78,7 +78,7 @@ function App() {
       }
     }
   };
-
+  //run step separator
   stepSeparator();
 
   //grab names and default values from json data
