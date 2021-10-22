@@ -19,7 +19,8 @@ function App() {
     let mergedState = { ...oldState, ...newState };
     setFormState(() => mergedState);
   };
-  //
+
+  //format form state into object structure backend expects
   const formatDataForSending = (data) => {
     let formattedData = initialValues.map((field) => {
       field.valueStr = data[field["code"]];
@@ -27,9 +28,10 @@ function App() {
     });
     return (formattedData = [...formattedData]);
   };
-
+  //state to check if data is currently being submitted
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  //mock API function, checks form data against expected object schema
   const submitRegistration = (fields) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
