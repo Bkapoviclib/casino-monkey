@@ -101,6 +101,8 @@ function App() {
   const resetStep = () => {
     setStep(1);
   };
+
+  //Main render function
   return (
     <div>
       <div id="app-container">
